@@ -1,0 +1,138 @@
+.wishlist-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.wishlist-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.wishlist-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.wishlist-card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.wishlist-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+.wishlist-card-info {
+  padding: 12px;
+}
+
+.wishlist-card-brand {
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.wishlist-card-name {
+  font-size: 13px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wishlist-card-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.wishlist-card-btns {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+
+.wishlist-add-cart {
+  flex: 1;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.wishlist-add-cart:hover {
+  background-color: #333;
+}
+
+.wishlist-remove {
+  padding: 10px 12px;
+  background: white;
+  border: 1.5px solid #e63946;
+  border-radius: 2px;
+  color: #e63946;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-remove:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+.wishlist-empty {
+  text-align: center;
+  padding: 80px;
+  color: #666;
+}
+
+.wishlist-empty h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.wishlist-empty button {
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

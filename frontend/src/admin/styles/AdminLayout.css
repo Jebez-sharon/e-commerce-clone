@@ -1,0 +1,93 @@
+.admin-layout{
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar{
+    width: 240px;
+    color: white;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+}
+
+.admin-sidebar-logo{
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    padding: 24px 24px 8px;
+}
+
+.admin-sidebar-subtitle{
+    font-size: 11px;
+    color: #666;
+    padding: 0 24px 24px;
+    border-bottom: 1px solid #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    flex: 1;
+}
+
+.admin-nav-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.admin-nav-link:hover{
+    color: white;
+    background-color: #2a2a2a;
+}
+
+.admin-nav-link.active{
+    color: white;
+    background-color: #2a2a2a;
+    border-left: 3px solid #e63946;
+}
+
+.admin-sidebar-logout{
+    display: flex;
+    align-items: center;gap: 12px;
+    padding: 16px 24px;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-top: 1px solid #333;
+    transition: color 0.2s;
+    width:100%;
+    text-align: left;
+}
+
+.admin-sidebar-logout:hover{
+    color: #e63946;
+}
+
+.admin-main{
+    margin-left: 240px;
+    flex: 1;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 32px;
+}

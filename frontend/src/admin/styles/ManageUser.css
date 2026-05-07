@@ -1,0 +1,11 @@
+.user-detail-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid  #f0f0f0;
+    font-size: 14px;
+}
+
+.user-detail-row span{
+    color: #666;
+}
