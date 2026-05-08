@@ -13,6 +13,7 @@ import Wishlist from "./pages/Wishlist";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
+import OrderSuccess from "./pages/OrderSuccess";
 
 //Admin Pages
 import AdminLogin from "./admin/pages/AdminLogin";
@@ -43,6 +44,7 @@ function App(){
                 <Route path="/orders" element={<Orders />}/>
                 <Route path="/profile" element={<Profile />}/>
                 <Route path="/wishlist" element={<Wishlist />}/>
+                <Route path="/order-success" element={<OrderSuccess />} />
 
                 {/* admin Routes */}
                 <Route path="/admin" element={<AdminLogin/>}/>

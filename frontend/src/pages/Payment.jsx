@@ -87,7 +87,7 @@ function CheckoutForm({ cart, shippingAddress, user, token, getTotal }) {
       localStorage.removeItem("cart");
       localStorage.removeItem("shippingAddress");
       window.dispatchEvent(new Event("cartUpdated"));
-      navigate("/orders");
+      navigate("/order-success");
     } catch (err) {
       setError("Payment failed. Try again.");
     } finally {
@@ -168,7 +168,7 @@ function Payment() {
       localStorage.removeItem("cart");
       localStorage.removeItem("shippingAddress");
       window.dispatchEvent(new Event("cartUpdated"));
-      navigate("/orders");
+      navigate("/order-success");
     } catch (error) {
       alert("Something went wrong. Try again.");
     } finally {

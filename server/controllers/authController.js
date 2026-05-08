@@ -62,7 +62,7 @@ const registerUser = async(req, res) =>{
 const adminLogin = async(req, res) =>{
     try{
         const{username, password} = req.body;
-        if(username=== "admin" && password === "Ajio@2025Secure"){
+        if(username=== "admin" && password === "1234"){
             const token = generateToken("admin","admin");
             res.status(200).json({token, role:"admin"});
         }else{
