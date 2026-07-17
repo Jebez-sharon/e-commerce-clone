@@ -69,3 +69,16 @@ Backend API: https://ajio-clone-backend-qimi.onrender.com
 Jebez Sharon
 GitHub: https://github.com/Jebez-sharon
 
+## Screenshots
+
+### Home Page
+![Home page](home.png)
+
+### Product Page
+![Product page](product-page.png)
+
+### Cart
+![Cart](cart.png)
+
+### Admin Dashboard
+![Admin dashboard](admin-dashboard.png)
